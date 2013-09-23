@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <scene-change-new comment="false" x="26" y="40">
+                    <SCENE eid="6" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="1"/>
+                </scene-change-new>
+            </group>
+            <int id="0" val="5"/>
+        </event-delay>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <stop-sounds comment="false" x="26" y="40"/>
+                <play-sound4 comment="false" x="26" y="60">
+                    <int id="0" val="1"/>
+                    <SOUND eid="43" id="1"/>
+                </play-sound4>
+                <set-volume comment="false" x="26" y="87">
+                    <int id="0" val="50"/>
+                </set-volume>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

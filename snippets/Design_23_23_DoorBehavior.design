@@ -24,6 +24,11 @@
                         </setanim>
                     </group>
                 </else>
+                <play-sound-channel comment="false" x="26" y="173">
+                    <int id="0" val="0"/>
+                    <SOUND eid="47" id="1"/>
+                    <int id="2" val="2"/>
+                </play-sound-channel>
             </group>
         </init>
     </group>

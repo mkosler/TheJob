@@ -8,4 +8,6 @@
     <scene desc="" format="1.0" id="5" name="SplashPage"/>
     <scene desc="" format="1.0" id="6" name="MainTitle"/>
     <scene desc="" format="1.0" id="7" name="StoryPage"/>
+    <scene desc="" format="1.0" id="8" name="ExitScreen"/>
+    <scene desc="" format="1.0" id="9" name="How To"/>
 </scenes>

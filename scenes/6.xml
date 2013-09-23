@@ -3,13 +3,19 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <color-bg blue="255" green="255" red="255"/>
-    <backgrounds/>
+    <color-bg blue="0" green="0" red="0"/>
+    <backgrounds>
+        <ref id="39"/>
+    </backgrounds>
     <foregrounds/>
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="33" name="PlayButton 1" sx="1.0" sy="1.0" x="303" y="257" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="35" name="AboutButton 2" sx="1.0" sy="1.0" x="305" y="353" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="37" name="ExitButton 3" sx="1.0" sy="1.0" x="305" y="449" z="0"/>
+    </actors>
     <snippets/>
     <terrain/>
 </scene>

@@ -25,6 +25,15 @@
                                     <int id="1" val="Activate Distractor"/>
                                     <int id="2" val="TurnOn"/>
                                 </say>
+                                <play-sound-channel comment="false" x="48" y="203">
+                                    <int id="0" val="0"/>
+                                    <SOUND eid="56" id="1"/>
+                                    <int id="2" val="6"/>
+                                </play-sound-channel>
+                                <set-volume-channel comment="false" x="48" y="230">
+                                    <int id="0" val="50"/>
+                                    <int id="1" val="6"/>
+                                </set-volume-channel>
                             </group>
                         </else>
                     </group>

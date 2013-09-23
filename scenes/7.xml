@@ -3,8 +3,10 @@
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <color-bg blue="255" green="255" red="255"/>
-    <backgrounds/>
+    <color-bg blue="0" green="0" red="0"/>
+    <backgrounds>
+        <ref id="40"/>
+    </backgrounds>
     <foregrounds/>
     <joints/>
     <regions/>

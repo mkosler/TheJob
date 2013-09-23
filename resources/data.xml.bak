@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <sprite atlasID="0" default="0" desc="" height="57" id="36" name="AboutButton" shared="false" width="194">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="0" loop="true" name="0" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="1" loop="true" name="1" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="32" fixedrot="false" fric="0.2" gid="3" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="AboutButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="36" static="false" touchable="true">
+        <snippets/>
+    </actor>
     <custom-block blocktag="custom-28" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;addnode&quot;, ~,~,~);" desc="" global="false" gui="add node (x: %1, y: %2) with speed %3 to path for %0" id="28" message="addnode" name="addnode" oid="-1" return="VOID" shared="false" snippetID="20">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="x" order="1" type="NUMBER"/>
@@ -32,12 +43,17 @@
         <blank name="Actor1" order="1" type="ACTOR"/>
         <blank name="Actor2" order="2" type="ACTOR"/>
     </custom-block>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="608" id="39" name="Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-30" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;clearpath&quot;);" desc="" global="false" gui="clear path for %0" id="30" message="clearpath" name="clearpath" oid="-1" return="VOID" shared="false" snippetID="20">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-20" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;ClearPath&quot;);" desc="" global="false" gui="clear path for %0" id="20" message="ClearPath" name="ClearPath" oid="-1" return="VOID" shared="false" snippetID="20">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <music desc="" id="56" loop="true" name="Distraction Beep" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="52" loop="true" name="Distraction Computer" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="53" loop="true" name="Distraction Fire Alarm" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="54" loop="true" name="Distraction Microwave Ring" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="14" id="14" name="Distractor" shared="false" width="14">
         <anim across="1" atlasID="-1" down="1" durations="100" height="14" id="0" loop="true" name="Inactive" numframes="1" originx="0" originy="0" width="14">
             <poly data="4,0,0,14,0,14,14,0,14" density="0.1" fric="0.2" gid="-1000" id="0" name="Inactive" rest="0.0" sensor="false"/>
@@ -81,6 +97,23 @@
             </s>
         </snippets>
     </actor>
+    <music desc="" id="47" loop="true" name="Door Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="46" loop="true" name="Dramatic Music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="59" loop="true" name="Dramatic Music Delay" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="608" id="42" name="end temp" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="33" fixedrot="false" fric="0.2" gid="3" id="37" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="ExitButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="38" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="57" id="38" name="ExitButton" shared="false" width="194">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="0" loop="true" name="0" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="1" loop="true" name="1" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music desc="" id="44" loop="true" name="Game Music 1" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="45" loop="true" name="Game Music 2" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="44" id="16" name="Guard" shared="false" width="32">
         <anim across="18" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="44" id="0" loop="true" name="Animation 0" numframes="18" originx="16" originy="22" width="576">
             <poly data="3,2,2,17,23,30,1" density="0.1" fric="0.2" gid="7" id="1" name="" rest="0.0" sensor="true"/>
@@ -106,8 +139,8 @@
                 <prop id="12" list="0" val="0.0"/>
                 <prop id="13" list="0" val="0.0"/>
                 <prop id="14" list="0" val="0.0"/>
-                <prop id="15" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.0"/>
                 <prop id="17" list="0" val="10.0"/>
                 <prop id="19" list="0" val="0.0"/>
                 <prop id="18" list="0" val="0.0"/>
@@ -115,6 +148,8 @@
             </s>
         </snippets>
     </actor>
+    <music desc="" id="48" loop="true" name="Guard Catch Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="49" loop="true" name="Guard Distraction Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="32" id="24" name="GUI_LightTimer" shared="false" width="100">
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Green" numframes="1" originx="50" originy="16" width="100"/>
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="1" loop="true" name="Red" numframes="1" originx="50" originy="16" width="100"/>
@@ -122,6 +157,8 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="21" fixedrot="false" fric="0.2" gid="6" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="GUI_LightTimer" oid="-1" pausable="true" rest="0.0" shared="false" sprite="24" static="true" touchable="true">
         <snippets/>
     </actor>
+    <music desc="" id="50" loop="true" name="Hover Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="608" id="41" name="How" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="0" desc="" height="1200" id="12" name="Light" shared="false" width="1600">
         <anim across="1" atlasID="-1" down="1" durations="100" height="1200" id="0" loop="true" name="Animation 0" numframes="1" originx="800" originy="600" width="1600"/>
         <anim across="1" atlasID="-1" down="1" durations="100" height="16" id="1" loop="true" name="Animation 1" numframes="1" originx="8" originy="8" width="16">
@@ -131,6 +168,8 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="false" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="4" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" lw="true" mass="1.0" name="Light" oid="-1" pausable="true" rest="0.0" shared="false" sprite="12" static="true" touchable="false">
         <snippets/>
     </actor>
+    <music desc="" id="51" loop="true" name="Light Switch Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="55" loop="true" name="Light Switch Short Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <tileset across="18" atlasID="0" desc="" down="18" id="26" name="Main" oid="-1" shared="false" th="16" tw="16">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -470,6 +509,17 @@
             </s>
         </snippets>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="false" fric="0.2" gid="3" id="33" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="PlayButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="34" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="57" id="34" name="PlayButton" shared="false" width="194">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="0" loop="true" name="0" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="1" loop="true" name="1" numframes="1" originx="97" originy="28" width="194">
+            <poly data="4,0,0,194,0,194,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" desc="" height="16" id="1" name="Player 1" shared="false" width="16">
         <anim across="1" atlasID="-1" down="1" durations="100" height="16" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="8" width="16">
             <circle data="6,2,2" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
@@ -516,6 +566,9 @@
         <tile collision="-1" data="" durations="100" frames="2" id="18" order="-1"/>
         <tile collision="1" data="" durations="100" frames="3" id="19" order="-1"/>
     </tileset>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="31" name="Splash" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="608" id="32" name="Splash1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="608" id="40" name="Story" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="0" desc="" height="7" id="5" name="Switch" shared="false" width="16">
         <anim across="1" atlasID="-1" down="1" durations="100" height="7" id="0" loop="true" name="Off" numframes="1" originx="8" originy="8" width="16">
             <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
@@ -536,4 +589,6 @@
             </s>
         </snippets>
     </actor>
+    <music desc="" id="57" loop="true" name="Switch Effect" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="43" loop="true" name="TitleMusic" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
 </pack>

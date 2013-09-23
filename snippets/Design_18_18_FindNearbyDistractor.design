@@ -34,6 +34,15 @@
                                                 <int id="1" val="90"/>
                                             </plus>
                                         </setangle>
+                                        <play-sound-channel comment="false" x="59" y="275">
+                                            <int id="0" val="0"/>
+                                            <SOUND eid="49" id="1"/>
+                                            <int id="2" val="5"/>
+                                        </play-sound-channel>
+                                        <set-volume-channel comment="false" x="59" y="302">
+                                            <int id="0" val="50"/>
+                                            <int id="1" val="5"/>
+                                        </set-volume-channel>
                                     </group>
                                     <eq comment="false" id="0" x="0" y="0">
                                         <actor-get-prop comment="false" id="0" x="0" y="0">
@@ -53,14 +62,14 @@
                                 <int id="2" val="IsActive?"/>
                             </get-attribute>
                         </if>
-                        <else comment="false" x="37" y="299">
+                        <else comment="false" x="37" y="346">
                             <group eventID="1" id="-1">
-                                <actor-enabledisable-snippet comment="false" x="48" y="319">
+                                <actor-enabledisable-snippet comment="false" x="48" y="366">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="Follow Path"/>
                                 </actor-enabledisable-snippet>
-                                <setangle comment="false" x="48" y="346">
+                                <setangle comment="false" x="48" y="393">
                                     <ACTOR eid="this" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-attribute comment="false" id="0" x="0" y="0">
