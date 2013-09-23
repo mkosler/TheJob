@@ -346,7 +346,7 @@
                 <if comment="false" x="26" y="1608">
                     <group eventID="3" id="-1">
                         <set-val-2-11 comment="false" x="37" y="1641">
-                            <int id="0" val="20"/>
+                            <int id="0" val="10"/>
                         </set-val-2-11>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
@@ -357,7 +357,7 @@
                 <else comment="false" x="26" y="1673">
                     <group eventID="3" id="-1">
                         <set-val-2-11 comment="false" x="37" y="1693">
-                            <int id="0" val="10"/>
+                            <int id="0" val="20"/>
                         </set-val-2-11>
                     </group>
                 </else>

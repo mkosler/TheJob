@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <actor-set-prop comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Current Region"/>
+                    <region comment="false" id="2" x="0" y="0">
+                        <REGION eid="2" id="0"/>
+                    </region>
+                </actor-set-prop>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="2" id="1"/>
+            <ACTORTYPE eid="15" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <actor-set-prop comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Current Region"/>
+                    <region comment="false" id="2" x="0" y="0">
+                        <REGION eid="3" id="0"/>
+                    </region>
+                </actor-set-prop>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="3" id="1"/>
+            <ACTORTYPE eid="15" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <actor-set-prop comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Current Region"/>
+                    <region comment="false" id="2" x="0" y="0">
+                        <REGION eid="3" id="0"/>
+                    </region>
+                </actor-set-prop>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="3" id="1"/>
+            <ACTORTYPE eid="13" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <actor-set-prop comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Current Region"/>
+                    <region comment="false" id="2" x="0" y="0">
+                        <REGION eid="2" id="0"/>
+                    </region>
+                </actor-set-prop>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="2" id="1"/>
+            <ACTORTYPE eid="13" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

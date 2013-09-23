@@ -10,7 +10,14 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="153" g="51" h="519" id="0" name="Region 0" pts="4,0.0,0.0,0.0,519.0,109.0,519.0,109.0,0.0" r="51" type="box" w="109" x="33" y="36"/>
+        <region b="64" g="64" h="479" id="0" name="Room 1" pts="4,64.0,0.0,64.0,479.0,0.0,479.0,0.0,0.0" r="64" type="box" w="64" x="63" y="63"/>
+        <region b="64" g="64" h="92" id="1" name="Room 2" pts="4,414.0,0.0,414.0,92.0,0.0,92.0,0.0,0.0" r="64" type="box" w="414" x="143" y="65"/>
+        <region b="64" g="64" h="93" id="2" name="Room 3" pts="4,412.0,0.0,412.0,93.0,0.0,93.0,0.0,0.0" r="64" type="box" w="412" x="143" y="175"/>
+        <region b="64" g="64" h="266" id="3" name="Room 4" pts="4,124.0,0.0,124.0,266.0,0.0,266.0,0.0,0.0" r="64" type="box" w="124" x="146" y="274"/>
+        <region b="64" g="64" h="204" id="4" name="Room 5" pts="4,110.0,0.0,110.0,204.0,0.0,204.0,0.0,0.0" r="64" type="box" w="110" x="288" y="288"/>
+        <region b="64" g="64" h="206" id="5" name="Room 6" pts="4,111.0,0.0,111.0,206.0,0.0,206.0,0.0,0.0" r="64" type="box" w="111" x="415" y="288"/>
+        <region b="64" g="64" h="266" id="6" name="Room 7" pts="4,162.0,0.0,162.0,266.0,0.0,266.0,0.0,0.0" r="64" type="box" w="162" x="544" y="275"/>
+        <region b="64" g="64" h="128" id="7" name="Room 8" pts="4,93.0,0.0,93.0,128.0,0.0,128.0,0.0,0.0" r="64" type="box" w="93" x="592" y="78"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -32,6 +39,7 @@
                     <prop id="3" list="0" val="On_ani"/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val=""/>
+                    <prop id="6" list="0" val="0"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
@@ -50,6 +58,7 @@
                     <prop id="3" list="0" val="On_ani"/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val=""/>
+                    <prop id="6" list="0" val="0"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
@@ -100,6 +109,7 @@
                     <prop id="3" list="0" val="On_ani"/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val=""/>
+                    <prop id="6" list="0" val="0"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
@@ -118,18 +128,55 @@
                     <prop id="3" list="0" val="On_ani"/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val=""/>
+                    <prop id="6" list="0" val="0"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="11" c="false" group="3" id="9" name="Objective 11" sx="1.0" sy="1.0" x="640" y="144" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="1" id="9" name="Objective 11" sx="1.0" sy="1.0" x="640" y="144" z="0"/>
         <actor a="0.0" aid="12" c="false" group="4" id="11" name="Light 12" sx="1.0" sy="1.0" x="-712" y="-96" z="1"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="23" name="GUI_LightTimer 13" sx="1.0" sy="1.0" x="669" y="535" z="2"/>
+        <actor a="0.0" aid="14" c="true" group="5" id="15" name="Guard 14" sx="1.0" sy="1.0" x="198" y="493" z="0">
+            <snippets>
+                <s enabled="true" id="18">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="20">
+                    <prop id="1" list="1" val="">
+                        <text order="0" value="214, 231"/>
+                        <text order="1" value="512, 240"/>
+                        <text order="2" value="623, 287"/>
+                        <text order="3" value="607, 527"/>
+                        <text order="4" value="215, 528"/>
+                    </prop>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="1" val=""/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="0.0"/>
+                    <prop id="7" list="0" val="false"/>
+                    <prop id="8" list="0" val="true"/>
+                    <prop id="9" list="0" val="0.0"/>
+                    <prop id="10" list="0" val="0.0"/>
+                    <prop id="12" list="0" val="0.0"/>
+                    <prop id="13" list="0" val="0.0"/>
+                    <prop id="14" list="0" val="0.0"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="15" list="0" val="0.0"/>
+                    <prop id="17" list="0" val="10.0"/>
+                    <prop id="19" list="0" val="0.0"/>
+                    <prop id="18" list="0" val="0.0"/>
+                    <prop id="23" list="0" val="true"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="15" c="false" group="3" id="13" name="Distractor 15" sx="1.0" sy="1.0" x="530" y="189" z="0"/>
     </actors>
     <snippets/>
     <terrain>
-        <p pts="22,640.0,176.0,592.0,176.0,592.0,144.0,624.0,144.0,624.0,16.0,528.0,16.0,528.0,144.0,576.0,144.0,576.0,176.0,496.0,176.0,496.0,112.0,192.0,112.0,192.0,96.0,496.0,96.0,496.0,0.0,0.0,0.0,0.0,480.0,64.0,480.0,64.0,96.0,80.0,96.0,80.0,480.0,640.0,480.0" x="64.0" y="64.0"/>
-        <p pts="4,16.0,0.0,16.0,16.0,0.0,16.0,0.0,0.0" x="640.0" y="144.0"/>
-        <p pts="20,256.0,16.0,144.0,16.0,144.0,224.0,256.0,224.0,256.0,96.0,272.0,96.0,272.0,240.0,0.0,240.0,0.0,192.0,16.0,192.0,16.0,224.0,128.0,224.0,128.0,16.0,16.0,16.0,16.0,176.0,0.0,176.0,0.0,0.0,272.0,0.0,272.0,80.0,256.0,80.0" x="272.0" y="272.0"/>
         <p pts="4,672.0,512.0,0.0,512.0,0.0,0.0,672.0,0.0" x="48.0" y="48.0"/>
+        <p pts="20,256.0,16.0,144.0,16.0,144.0,224.0,256.0,224.0,256.0,96.0,272.0,96.0,272.0,240.0,0.0,240.0,0.0,192.0,16.0,192.0,16.0,224.0,128.0,224.0,128.0,16.0,16.0,16.0,16.0,176.0,0.0,176.0,0.0,0.0,272.0,0.0,272.0,80.0,256.0,80.0" x="272.0" y="272.0"/>
+        <p pts="4,16.0,0.0,16.0,16.0,0.0,16.0,0.0,0.0" x="640.0" y="144.0"/>
+        <p pts="22,640.0,176.0,592.0,176.0,592.0,144.0,624.0,144.0,624.0,16.0,528.0,16.0,528.0,144.0,576.0,144.0,576.0,176.0,496.0,176.0,496.0,112.0,192.0,112.0,192.0,96.0,496.0,96.0,496.0,0.0,0.0,0.0,0.0,480.0,64.0,480.0,64.0,96.0,80.0,96.0,80.0,480.0,640.0,480.0" x="64.0" y="64.0"/>
     </terrain>
 </scene>

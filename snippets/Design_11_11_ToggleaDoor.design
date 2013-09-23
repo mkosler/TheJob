@@ -5,41 +5,84 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="48">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="73">
-                            <ACTOR eid="this" id="0"/>
-                            <get-val-11-5 comment="false" id="1" x="0" y="0"/>
-                        </setanim>
-                        <set-val-11-4 comment="false" x="37" y="105">
-                            <false comment="false" id="0" x="0" y="0"/>
-                        </set-val-11-4>
-                    </group>
-                    <get-val-11-4 comment="false" id="0" x="0" y="0"/>
-                </if>
-                <else comment="false" x="26" y="142">
-                    <group eventID="1" id="-1">
-                        <shout comment="false" x="37" y="162">
+                        <shout comment="false" x="37" y="81">
                             <get-val-11-1 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="openDoor"/>
                         </shout>
-                        <setanim comment="false" x="37" y="194">
+                        <setanim comment="false" x="37" y="113">
                             <ACTOR eid="this" id="0"/>
                             <get-val-11-3 comment="false" id="1" x="0" y="0"/>
                         </setanim>
-                        <set-val-11-4 comment="false" x="37" y="226">
+                        <set-val-11-4 comment="false" x="37" y="145">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-11-4>
                     </group>
-                </else>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <CONTROL eid="4" id="1"/>
+                    </keystate>
+                </if>
             </group>
             <ACTOR eid="this" id="0"/>
             <ACTORTYPE eid="0" id="1"/>
         </event-collide-actortotype>
     </group>
     <group eventID="1" id="1">
-        <shout comment="false" x="26" y="282">
-            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
-            <int id="1" val="closeDoor"/>
-        </shout>
+        <if comment="false" x="40" y="209">
+            <group eventID="1" id="-1">
+                <set-val-11-6 comment="false" x="51" y="239">
+                    <int id="0" val="0"/>
+                </set-val-11-6>
+                <if comment="false" x="51" y="259">
+                    <group eventID="1" id="-1">
+                        <shout comment="false" x="62" y="284">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="closeDoor"/>
+                        </shout>
+                        <setanim comment="false" x="62" y="316">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-11-5 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <set-val-11-4 comment="false" x="62" y="348">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-11-4>
+                    </group>
+                    <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="51" y="385">
+                    <group eventID="1" id="-1">
+                        <shout comment="false" x="62" y="405">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="openDoor"/>
+                        </shout>
+                        <setanim comment="false" x="62" y="437">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-11-3 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <set-val-11-4 comment="false" x="62" y="469">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-11-4>
+                    </group>
+                </else>
+            </group>
+            <moreeq comment="false" id="0" x="0" y="0">
+                <get-val-11-6 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="25"/>
+            </moreeq>
+        </if>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-11-6 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-11-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-11-6>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>
